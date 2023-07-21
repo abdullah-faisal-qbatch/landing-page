@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import logo from "./logo.jpeg";
 import home from "./home.jpg";
 import final from "./final.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Workflow from './components/Workflow';
 import { faStickyNote } from '@fortawesome/free-solid-svg-icons'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
@@ -24,19 +25,9 @@ import Image from './components/Image'
 function App() {
   return (
     <>
-      {/* // Navbar Element Start */}
-      {/* <div className='-skew-y-3 bg-orange-400 absolute' > */}
-
       <Navbar></Navbar>
-      
-      {/* Navbar Element End */}
-      {/* Header Element Start */}
       <Header></Header>      
-      {/* </div> */} 
-      {/* Header Element End */}
-      {/* Element Section Start */}
-      {/* <div className="flex flex-row mx-auto mt-10 space-y-0 ml-10 items-center"> */}
-      <div className="grid grid-cols-3 justify-content mt-5 ml-60 mr-80" style={{
+      <div className="grid grid-cols-3 justify-content mt-5 ml-60 mr-80 gap-5" style={{
       height:'60vh',
       alignItems:'center',
       // border:'5px solid red',
@@ -61,10 +52,6 @@ function App() {
       <Image/>
       <Image/>
       </div> */}
-
-
-
-
       {/* Element Section End */}
       {/* Section Before Footer Start */}
       <RequestDemo/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "./../logo.jpeg";
+import logo from "./../logo-final.png";
 
 const Navbar = () => {
   return (    
@@ -9,10 +9,11 @@ const Navbar = () => {
       }
     }>
     <div className="flex flex-row-start items-center justify-between">
-      <div className="flex space-x-10 ml-56">
+      <div className="flex space-x-10 ml-56" style={{
+      }}>
         <img
           src={logo}
-          style={{ width: 50, height: 50 }}
+          style={{ width: 30, height: 30 }}
           alt="Error in image"
         ></img>
         <a href="/" className="hover:text-darkGrayishBlue">

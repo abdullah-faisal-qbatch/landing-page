@@ -5,7 +5,8 @@ const RequestDemo = () => {
     <div className="flex flex-col items-center space-y-5 bg-slate-300"
     style={{
       height:'60vh',
-      justifyContent:'center'
+      justifyContent:'center',
+      backgroundColor:"#929DAC"
     }}      
     >
     <h1 className="text-4xl font-bold text-center " style={{
@@ -21,7 +22,7 @@ const RequestDemo = () => {
       <button className="bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 rounded">
         Request Demo
       </button>
-    </div>
+      </div>
   </div>
 )
 }

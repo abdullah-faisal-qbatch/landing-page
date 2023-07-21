@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from './../logo-final.png'
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
     style={{
       height:'60vh',
       alignItems:'center',
-    //   border:'5px solid red',    
+      border:'5px solid red',    
       justifyContent:'center',
       backgroundColor:"white",
     }}      
@@ -19,7 +20,7 @@ const Footer = () => {
       width:"700px",
     }}>
       The smarter way to start your next idea
-    </p> 
+    </p>     
     </div>
     {/* 2nd Element */}
     <div>
@@ -134,5 +135,4 @@ const Footer = () => {
   </div>
 )
 }
-
 export default Footer
