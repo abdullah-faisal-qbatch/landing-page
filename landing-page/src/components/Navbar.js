@@ -3,7 +3,11 @@ import logo from "./../logo.jpeg";
 
 const Navbar = () => {
   return (    
-    <nav className="mx-auto ps-6 pt-4">
+    <nav className="mx-auto ps-6 pt-4" style={
+      {
+        color:"white"
+      }
+    }>
     <div className="flex flex-row-start items-center justify-between">
       <div className="flex space-x-10 ml-56">
         <img

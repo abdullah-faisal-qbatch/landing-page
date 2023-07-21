@@ -4,12 +4,14 @@ import home from "./../home.jpg";
 
 const Header = () => {
   return (
-    <section id="#header" className="ml-64">
+    <section id="#header" className="ml-64" style={{
+      color:"white"
+    }}>
     {/* Container */}
     <div className="flex flex-row mt-10">
       {/* left */}
       <div className="flex flex-col mb-32 items-center space-y-5">
-        <h1 className="max-w-md text-4xl font-bold text-center ">
+        <h1 className="max-w-md text-4xl font-bold text-center">
           Create Stunning web experiences
         </h1>
         <p className="max-w-sm text-center text-darkGrayishBlue">

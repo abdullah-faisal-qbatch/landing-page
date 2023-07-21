@@ -9,8 +9,11 @@ const Workflow = (props) => {
     <div>
     <FontAwesomeIcon icon={props.icon} size="lg" border style={{
       backgroundColor:"#2374ea",
-      color:"white"
-    }}/>
+      color:"white",
+      borderRadius: "60px",
+      boxShadow: "0 0 2px #888",
+      padding: "0.5em 0.5em"    
+      }}/>
     </div>
     <h1 className="text-2xl font-bold">
       Robust Workflow

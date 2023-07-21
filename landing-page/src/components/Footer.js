@@ -2,27 +2,136 @@ import React from 'react'
 
 const Footer = () => {
   return (
-      <div className="flex flex-col mb-32 items-center space-y-5 bg-slate-300"
-      style={{
-        height:'60vh',
-        alignItems:'center',
-        justifyContent:'center'
-      }}      
-      >
-      <h1 className="max-w-md text-4xl font-bold text-center " style={{
-        fontFamily:"sans-serif"
-      }}>
-        Say goodbye to long queues, big          
-        updates, and <p className='text-brightRed'>confusion</p>
-      </h1> 
-      <p className="max-w-sm text-center text-darkGrayishBlue">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.      </p>
-      <div className="flex ml-0 space-x-1">
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
-          Request Demo
-        </button>
-      </div>
+    // Main Section
+    <div className="flex flex-row items-center space-y-5"
+    style={{
+      height:'60vh',
+      alignItems:'center',
+    //   border:'5px solid red',    
+      justifyContent:'center',
+      backgroundColor:"white",
+    }}      
+    >
+    {/* 1st element */}
+    <div>
+    <p className="text-base font-bold text-center" style={{
+      fontFamily:"sans-serif",
+      width:"700px",
+    }}>
+      The smarter way to start your next idea
+    </p> 
     </div>
+    {/* 2nd Element */}
+    <div>
+    <p className="text-base text-center" style={{
+      fontFamily:"sans-serif",
+      width:"700px",
+    }}>
+        {/* Division of 2nd element */}
+        {/* Row # 01 */}
+        <div className='flex flex-row items-center font-bold justify-between mr-10'
+                style={{
+                    fontSize:"14px"
+                }}
+        >
+            {/* 1st element */}
+            <div>
+                How it Works
+            </div>
+            <div>
+                Resources
+            </div>
+            <div>
+                Products
+            </div>
+
+            <div>
+                Company
+            </div>
+        </div>
+        {/* Row # 02 */}
+        <div className='flex flex-row items-center justify-between mr-10 text-color-darkGrayishBlue'
+        style={{
+            fontSize:"13px"
+        }}
+        >
+            {/* 1st element */}
+            <div>
+                Overview
+            </div>
+            <div>
+                Customer Stories
+            </div>
+            <div>
+            Corporate Partners
+            </div>
+
+            <div>
+            About Us
+            </div>
+        </div>
+        {/* Row # 03 */}
+        <div className='flex flex-row items-center justify-between mr-10'
+                style={{
+                    fontSize:"13px"
+                }}
+        >
+            {/* 1st element */}
+            <div>
+                Pricing
+            </div>
+            <div>
+                Knowledge Base
+            </div>
+            <div>
+                Secure Identity
+            </div>
+
+            <div>
+            Careers
+            </div>
+        </div>
+        {/* Row # 04 */}
+        <div className='flex flex-row items-center justify-between mr-10'         
+        style={{
+            fontSize:"13px"
+        }}>
+            {/* 1st element */}
+            <div>
+                Service Areas
+            </div>
+            <div>
+                    Contact Us
+            </div>
+            <div>
+                Legal Help
+            </div>
+
+            <div>
+            Terms of Use
+            </div>
+        </div>
+        <div className='flex flex-row items-center justify-between mr-10'         
+        style={{
+            fontSize:"13px"
+        }}>
+            {/* 1st element */}
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+                First Capital
+            </div>
+
+            <div>
+            </div>
+        </div>
+
+    </p> 
+    </div>
+
+  </div>
 )
 }
 
