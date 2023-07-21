@@ -8,7 +8,7 @@ const Footer = () => {
     style={{
       height:'60vh',
       alignItems:'center',
-      border:'5px solid red',    
+    //   border:'5px solid red',    
       justifyContent:'center',
       backgroundColor:"white",
     }}      
