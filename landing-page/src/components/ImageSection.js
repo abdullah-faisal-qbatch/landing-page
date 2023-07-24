@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./Image";
+import Image from "./../cards/Image";
 import "./../styles/ImageSection.css";
 import image from "./../assets/image.jpg";
 
