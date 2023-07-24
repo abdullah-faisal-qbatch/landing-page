@@ -1,7 +1,7 @@
 import React from "react";
-import "./../styles/Image.css";
+import "../styles/Image.css";
 
-const Image = (props) => {
+function Image(props) {
   return (
     <div className="flex space-x-2 flex-col mt-10">
       <div className="img-section-height">
@@ -23,6 +23,6 @@ const Image = (props) => {
       </div>
     </div>
   );
-};
+}
 
 export default Image;

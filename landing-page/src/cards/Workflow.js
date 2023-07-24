@@ -1,8 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./../styles/Workflow.css";
+import "../styles/Workflow.css";
 
-const Workflow = (props) => {
+const Workflow =(props)=> {
   return (
     <div className="flex flex-col mb-12">
       <div>
@@ -15,6 +15,6 @@ const Workflow = (props) => {
       </p>
     </div>
   );
-};
+}
 
 export default Workflow;

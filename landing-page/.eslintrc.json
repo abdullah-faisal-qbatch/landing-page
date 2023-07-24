@@ -1,0 +1,20 @@
+{
+    "env": {
+        "browser": true,
+        // "commonjs": true,
+        "es2021": true,
+        // "jest": true
+    },
+    "extends": ["airbnb","eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "no-console": "off",
+        "quotes": [
+            "error",
+            "double"
+        ]
+    }
+}

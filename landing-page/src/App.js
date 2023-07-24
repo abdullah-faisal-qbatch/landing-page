@@ -1,13 +1,10 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
+import {
+  faStickyNote, faUserCircle, faThumbsUp, faHeart, faFile, faAddressBook,
+} from "@fortawesome/free-solid-svg-icons";
 import Workflow from "./cards/Workflow";
-import { faStickyNote } from "@fortawesome/free-solid-svg-icons";
-import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
-import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import RequestDemo from "./components/RequestDemo";
 import ImageSection from "./components/ImageSection";
@@ -53,18 +50,18 @@ function App() {
   ];
   return (
     <>
-      <Navbar></Navbar>
-      <Header></Header>
+      <Navbar />
+      <Header />
       <div className="grid grid-cols-3 justify-content mt-5 ml-60 mr-80 gap-5 page-icons">
         {iconsData.map((index) => (
           <Workflow
             icon={index.icon}
             heading={index.heading}
             description={index.description}
-          ></Workflow>
+          />
         ))}
       </div>
-      <ImageSection></ImageSection>
+      <ImageSection />
       <RequestDemo />
       <Footer />
     </>
