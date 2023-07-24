@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    /* background-color: yellow; */
-    height: 140vh;
-    background: linear-gradient(175deg, #111D2D 50%, #FFFFFF 50%);
+body {
+  /* background-color: yellow; */
+  height: 140vh;
+  background: linear-gradient(175deg, #111d2d 50%, #ffffff 50%);
 }

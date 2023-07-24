@@ -1,51 +1,43 @@
-import React from 'react'
-import logo from "./../logo-final.png";
+import React from "react";
+import logo from "./../assets/logo.png";
+import "./../styles/Navbar.css";
 
 const Navbar = () => {
-  return (    
-    <nav className="mx-auto ps-6 pt-4" style={
-      {
-        color:"white"
-      }
-    }>
-    <div className="flex flex-row-start items-center justify-between">
-      <div className="flex space-x-10 ml-56" style={{
-      }}>
-        <img
-          src={logo}
-          style={{ width: 30, height: 30 }}
-          alt="Error in image"
-        ></img>
-        <a href="/" className="hover:text-darkGrayishBlue">
-          Pricing
-        </a>
-        <a href="/" className="hover:text-darkGrayishBlue">
-          Product
-        </a>
-        <a href="/" className="hover:text-darkGrayishBlue">
-          About
-        </a>
-        <a href="/" className="hover:text-darkGrayishBlue">
-          Blog
-        </a>
-        <a href="/" className="hover:text-darkGrayishBlue">
-          Wall of Love
-        </a>
-        <a href="/" className="hover:text-darkGrayishBlue">
-          Resources
-        </a>
+  return (
+    <nav className="mx-auto ps-6 pt-4 navbar-main-section">
+      <div className="flex flex-row-start items-center justify-between">
+        <div className="flex space-x-10 ml-56 navbar-img-section">
+          <img src={logo} className="navbar-image" alt="Error in image"></img>
+          <a href="/" className="text-darkGrayishBlue hover:text-white">
+            Pricing
+          </a>
+          <a href="/" className="text-darkGrayishBlue hover:text-white">
+            Product
+          </a>
+          <a href="/" className="text-darkGrayishBlue hover:text-white">
+            About
+          </a>
+          <a href="/" className="text-darkGrayishBlue hover:text-white">
+            Blog
+          </a>
+          <a href="/" className="text-darkGrayishBlue hover:text-white">
+            Wall of Love
+          </a>
+          <a href="/" className="text-darkGrayishBlue hover:text-white">
+            Resources
+          </a>
+        </div>
+        <div className="flex space-x-10 pb-6 mr-32">
+          <a href="/" className="hover:text-darkGrayishBlue">
+            Sign in
+          </a>
+          <a href="/" className="hover:text-darkGrayishBlue resources">
+            Request Demo <span className="arrow">&#8594;</span>
+          </a>
+        </div>
       </div>
-      <div className="flex space-x-10 pb-6 mr-32">
-        <a href="/" className="hover:text-darkGrayishBlue">
-          Sign in
-        </a>
-        <a href="/" className="hover:text-darkGrayishBlue">
-          Request Demo
-        </a>
-      </div>
-    </div>
-  </nav>
-)
-}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

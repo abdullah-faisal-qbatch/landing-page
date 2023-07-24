@@ -1,0 +1,14 @@
+.header-main-section {
+  color: white;
+}
+
+.header-heading {
+  font-size: 48px;
+  font-family: serif;
+  width: 400px;
+  line-height: 2.7rem;
+}
+.header-image {
+  width: 450px;
+  height: 325px;
+}

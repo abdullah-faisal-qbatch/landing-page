@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-icons {
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: 100px;
+}

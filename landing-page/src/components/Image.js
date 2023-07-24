@@ -1,31 +1,32 @@
-import React from 'react'
-import final from './../final.jpg'
+import React from "react";
+import image from "./../assets/image.jpg";
+import "./../styles/Image.css";
 
-const Image = () => {
+const Image = (props) => {
   return (
-    <div className='flex space-x-2 flex-col mt-10' style={{
-        // border:"2px solid green",
-      }}>
-    <div 
-    style={{
-        height:"40vh"
-    }}>
-        <div style={{width: "300px", height: "300px"}}>
-            <img src={final} alt="Error in image" width="100%" height="100%" /> 
+    <div className="flex space-x-2 flex-col mt-10">
+      <div className="img-section-height">
+        <div className="img-head">
+          <img
+            src={props.image}
+            alt="Error in image"
+            className="single-image-section-style"
+          />
         </div>
-      </div> 
-      <div className='mt-2.5'>
-        <h1 className="max-w-md text-2xl font-bold mt-2.5" style={{
-          color:"black",
-          marginTop:"10px"
-        }}>Advanced Features</h1>
+      </div>
+      <div className="mt-2.5">
+        <h1 className="max-w-md text-2xl font-bold mt-2.5 img-desc">
+          {props.title}
+          {/* Advanced Features */}
+        </h1>
         <p className="max-w-sm text-darkGrayishBlue mt-2.5">
-          Our landing page template works on all devices, so you only have
-          to set it up once and get beautiful results forever
-        </p>``
+          {props.description}
+          {/* Our landing page template works on all devices, so you only have to
+          set it up once and get beautiful results forever */}
+        </p>
       </div>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Image
+export default Image;

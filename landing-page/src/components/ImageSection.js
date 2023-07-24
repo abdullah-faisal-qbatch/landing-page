@@ -1,27 +1,45 @@
-import React from 'react'
-import Image from './Image'
+import React from "react";
+import Image from "./Image";
+import "./../styles/ImageSection.css";
+import image from "./../assets/image.jpg";
 
 const ImageSection = () => {
+  const imagesData = [
+    {
+      picture: image,
+      title: "Advanced Features",
+      description:
+        "Our landing page template works on all devices, so you only have to set it up once and get beautiful results forever",
+    },
+    {
+      picture: image,
+      title: "Advanced Features",
+      description:
+        "Our landing page template works on all devices, so you only have to set it up once and get beautiful results forever",
+    },
+    {
+      picture: image,
+      title: "Advanced Features",
+      description:
+        "Our landing page template works on all devices, so you only have to set it up once and get beautiful results forever",
+    },
+  ];
   return (
-    <div className='flex flex-col items-center' style={{
-        color:"white",
-        justifyContent:"center"
-    }}>      
-    <h1 className='text-center mt-10' style={{
-        fontSize:"50px",
-        fontWeight:"200px",
-        width:"750px",
-    }}>
-    Simplify operating and manage 
-    with transparency
-    </h1>
-    <div className='grid grid-cols-3 mt-10 mb-10 ml-40 mr-40'>
-      <Image/>
-      <Image/>
-      <Image/>
+    <div className="flex flex-col items-center main-section-image-section">
+      <p className="text-center mt-10 image-section-description">
+        Simplify operating and manage with transparency
+      </p>
+      <div className="grid grid-cols-3 mt-30 mb-10 ml-40 mr-40 image-section-margin">
+        {imagesData.map((index) => (
+          <Image
+            image={index.picture}
+            title={index.title}
+            description={index.description}
+          ></Image>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ImageSection
+export default ImageSection;

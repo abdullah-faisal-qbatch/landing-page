@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "src/App.js",
-  ],  theme: {
+  content: ["./src/**/*.{html,js}"],  
+theme: {
     screens: {
       sm: "480px",
       md: "768px",
@@ -22,12 +21,11 @@ module.exports = {
       },
       gridTemplateRows: {
         // Simple 8 row grid
-        '8': 'repeat(8, minmax(0, 1fr))',
+        8: "repeat(8, minmax(0, 1fr))",
         // Complex site-specific row configuration
-        'layout': '200px minmax(900px, 1fr) 100px',
-      }
+        layout: "200px minmax(900px, 1fr) 100px",
+      },
     },
   },
   plugins: [],
-}
-
+};

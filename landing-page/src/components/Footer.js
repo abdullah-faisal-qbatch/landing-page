@@ -1,138 +1,44 @@
-import React from 'react'
-import logo from './../logo-final.png'
+import React from "react";
+import logo from "./../assets/logo.png";
+import "./../styles/Footer.css";
 
 const Footer = () => {
   return (
-    // Main Section
-    <div className="flex flex-row items-center space-y-5"
-    style={{
-      height:'60vh',
-      alignItems:'center',
-    //   border:'5px solid red',    
-      justifyContent:'center',
-      backgroundColor:"white",
-    }}      
-    >
-    {/* 1st element */}
-    <div>
-    <p className="text-base font-bold text-center" style={{
-      fontFamily:"sans-serif",
-      width:"700px",
-    }}>
-      The smarter way to start your next idea
-    </p>     
+    <div className="main-section-footer">
+      <div>
+        <div className="image-margin">
+          <img src={logo} className="footer-image" alt="Error in image" />
+        </div>
+        <p className="text-base font-bold text-center logo-message">
+          The smarter way to start your next idea
+        </p>
+      </div>
+      <div>
+        <div className="font-bold">How it Works</div>
+        <div>Overview</div>
+        <div>Pricing</div>
+        <div>Service Areas</div>
+      </div>
+      <div>
+        <div className="font-bold">Resources</div>
+        <div>Customer Stories</div>
+        <div>Knowledge Base</div>
+        <div>Contact Us</div>
+      </div>
+      <div className="product-footer">
+        <div className="font-bold">Products</div>
+        <div>Corporate Partners</div>
+        <div>Secure Identity</div>
+        <div>Legal Help</div>
+        <div>First Capital</div>
+      </div>
+      <div>
+        <div className="font-bold">Company</div>
+        <div>About Us</div>
+        <div>Careers</div>
+        <div>Terms of Use</div>
+      </div>
     </div>
-    {/* 2nd Element */}
-    <div>
-    <p className="text-base text-center" style={{
-      fontFamily:"sans-serif",
-      width:"700px",
-    }}>
-        {/* Division of 2nd element */}
-        {/* Row # 01 */}
-        <div className='flex flex-row items-center font-bold justify-between mr-10'
-                style={{
-                    fontSize:"14px"
-                }}
-        >
-            {/* 1st element */}
-            <div>
-                How it Works
-            </div>
-            <div>
-                Resources
-            </div>
-            <div>
-                Products
-            </div>
-
-            <div>
-                Company
-            </div>
-        </div>
-        {/* Row # 02 */}
-        <div className='flex flex-row items-center justify-between mr-10 text-color-darkGrayishBlue'
-        style={{
-            fontSize:"13px"
-        }}
-        >
-            {/* 1st element */}
-            <div>
-                Overview
-            </div>
-            <div>
-                Customer Stories
-            </div>
-            <div>
-            Corporate Partners
-            </div>
-
-            <div>
-            About Us
-            </div>
-        </div>
-        {/* Row # 03 */}
-        <div className='flex flex-row items-center justify-between mr-10'
-                style={{
-                    fontSize:"13px"
-                }}
-        >
-            {/* 1st element */}
-            <div>
-                Pricing
-            </div>
-            <div>
-                Knowledge Base
-            </div>
-            <div>
-                Secure Identity
-            </div>
-
-            <div>
-            Careers
-            </div>
-        </div>
-        {/* Row # 04 */}
-        <div className='flex flex-row items-center justify-between mr-10'         
-        style={{
-            fontSize:"13px"
-        }}>
-            {/* 1st element */}
-            <div>
-                Service Areas
-            </div>
-            <div>
-                    Contact Us
-            </div>
-            <div>
-                Legal Help
-            </div>
-
-            <div>
-            Terms of Use
-            </div>
-        </div>
-        <div className='flex flex-row items-center justify-between mr-10'         
-        style={{
-            fontSize:"13px"
-        }}>
-            {/* 1st element */}
-            <div>
-            </div>
-            <div>
-            </div>
-            <div>
-                First Capital
-            </div>
-
-            <div>
-            </div>
-        </div>
-
-    </p> 
-    </div>
-
-  </div>
-)
-}
-export default Footer
+  );
+};
+export default Footer;
