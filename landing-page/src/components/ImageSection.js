@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "./../cards/Image";
-import "./../styles/ImageSection.css";
-import image from "./../assets/image.jpg";
+import Image from "../cards/Image";
+import "../styles/ImageSection.css";
+import image from "../assets/image.jpg";
 
-const ImageSection = () => {
+const ImageSection =()=> {
   const imagesData = [
     {
       picture: image,
@@ -35,11 +35,11 @@ const ImageSection = () => {
             image={index.picture}
             title={index.title}
             description={index.description}
-          ></Image>
+          />
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default ImageSection;

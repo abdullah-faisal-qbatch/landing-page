@@ -1,8 +1,8 @@
 import React from "react";
-import "./../styles/Header.css";
-import home from "./../assets/home.jpg";
+import "../styles/Header.css";
+import home from "../assets/home.jpg";
 
-const Header = () => {
+function Header() {
   return (
     <section id="#header" className="ml-64 header-main-section">
       <div className="flex flex-row mt-10">
@@ -24,11 +24,11 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <img src={home} className="header-image" alt="Error in image"></img>
+          <img src={home} className="header-image" alt="Error in image" />
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Header;
